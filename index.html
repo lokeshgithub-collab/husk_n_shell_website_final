@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HUSK N SHELL - Organic Shell Products</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fefae0;
+      color: #333;
+    }
+
+    header {
+      background-color: #d4a373;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo img {
+      height: 50px;
+      vertical-align: middle;
+    }
+
+    .logo span {
+      margin-left: 10px;
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: white;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+    }
+
+    nav ul li a:hover {
+      color: #333;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 80px 20px;
+      background-color: #faedcd;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    .products {
+      padding: 40px 20px;
+      background-color: #fefae0;
+    }
+
+    .products h2 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .product {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+   .product img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain; /* Use 'contain' to fit the full image without cropping */
+  border-radius: 10px;
+  background-color: #fefae0; /* Optional: gives padding space for images with transparency or odd shapes */
+  padding: 10px; /* Optional: adds inner spacing to avoid touching edges */
+}
+
+
+
+.product img:hover {
+  transform: scale(1.05); /* zooms slightly on hover for interactivity */
+}
+
+
+
+    .product h3 {
+      margin: 15px 0 10px;
+    }
+
+    .product p {
+      font-size: 0.9rem;
+    }
+
+    .about,
+    .contact {
+      padding: 40px 20px;
+      background-color: #e9edc9;
+      text-align: center;
+    }
+
+    .about h2,
+    .contact h2 {
+      margin-bottom: 20px;
+    }
+
+    footer {
+      background-color: #ccd5ae;
+      text-align: center;
+      padding: 10px;
+      font-size: 0.9rem;
+    }
+
+    button {
+      background-color: #6c584c;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #5e503f;
+    }
+     .instagram-link {
+        color: #6c584c; /* Coconut shell color */
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .instagram-link:hover {
+        text-decoration: underline;
+        color: #5e503f; /* Darker shade when hovered */
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <img src="images/husk.jpg.jpeg" alt="HUSK N SHELL Logo" />
+      <span>HUSK N SHELL</span>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="husk.html">Home</a></li>
+        <li><a href="delivery.html">Delivery</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="myaccount.html">MyAccount</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <h1>Welcome to HUSK N SHELL</h1>
+    <p>Crafting beautiful, eco-friendly products from coconut shells and husks — replacing plastic with purpose since 2025.</p>
+    <br>
+     <button onclick="window.location.href='products.html'">Explore Products</button>
+  </section>
+
+  <section id="products" class="products">
+    <h2>Our Best Selling Products</h2>
+    <div class="product-grid">
+      <div class="product">
+        <img src="images/cocobank.jpg" alt="Coconut bank">
+        <h3>Coco bank</h3>
+        <p>Handcrafted from natural coconut shells — perfect for saving your money!</p>
+      </div>
+      <div class="product">
+        <img src="images/cocolamp.jpg" alt="coconut lamp">
+        <h3>coco lamp</h3>
+        <p>Eco-friendly lamps made from reclaimed coconut shells — plastic-free and sustainable.</p>
+      </div>
+      <div class="product">
+        <img src="images/coco ladle.jpeg" alt="coco ladle">
+        <h3>Husk Planter</h3>
+        <p>Biodegradable cooking ladles made from coconut husk — great for cooking dishes with pots</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <h2>About Us</h2>
+    <p>We are a passionate team from Tamil Nadu, focused on reducing plastic waste by creating eco-conscious alternatives using coconut shells and husks. Every product is made with care for nature and love for design.</p>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p>Have questions or want to collaborate? Reach out to us at:</p>
+    <p><strong>Instagram:</strong> <a href="https://www.instagram.com/husk_n_shell" target="_blank" style="color: #333; text-decoration: none;">husk_n_shell</a></p>
+    <p><strong>Phone:</strong> +91 8825765257</p>
+</section>
+
+
+  <footer>
+    &copy; 2025 HUSK N SHELL. All rights reserved.
+  </footer>
+
+  <script>
+    function scrollToProducts() {
+      document.getElementById("products").scrollIntoView({ behavior: "smooth" });
+    }
+  </script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
